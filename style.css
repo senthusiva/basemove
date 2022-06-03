@@ -1,0 +1,58 @@
+[id^="a"],
+[id^="b"],
+[id^="c"],
+[id^="d"],
+[id^="e"],
+[id^="f"],
+[id^="g"],
+[id^="h"],
+[id^="m-"] {
+    height: 100px;
+    width: 100px;
+    background-color: #c9c8c8;
+}
+
+.center {
+    border: 5px solid #000000;
+    text-align: center;
+}
+
+body {
+    background-color: #000000;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+hr {
+    margin: 20px 0px 20px 0px;
+}
+
+fieldset {
+    background-color: #eeeeee;
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+}
+
+input {
+    margin: 5px;
+}
+
+.myentry {
+    background-color: rgb(128, 163, 175);
+}
+
+.myorder {
+    background-color: green;
+}
+
+.enemy_order {
+    background-color: rgb(198, 39, 39);
+}
+
+#fcoord {
+    font-size: 50px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="center">
+        <button id="m-grid" onclick="disableButton(this);createBtn()">Create 8x8 Grid</button>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend class="myentry">Entry:</legend>
+                    <label for="fcoord">Enter Field Coordinate:</label>
+                    <input type="text" id="fcoord" name="fcoord"><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend class="myorder">My Order:</legend>
+                    <input type="radio" value="mbase" name="my_order">
+                    <label for="mbase">Main Base (2x)</label><br><br>
+
+                    <input type="radio" value="sbase" name="my_order">
+                    <label for="sbase">Support Base (2x)</label><br><br>
+
+                    <input type="radio" value="pbase" name="my_order">
+                    <label for="pbase">Port Base (2x)</label><br><br>
+
+                    <input type="radio" value="logistics" name="my_order">
+                    <label for="logistics">Logistics</label><br><br>
+                    <hr>
+                    <input type="radio" value="strike" name="my_order">
+                    <label for="strike">Artillery Strike</label><br><br>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend class="enemy_order">Enemy Order:</legend>
+                    <input type="radio" value="enemy_strike" name="my_order">
+                    <label for="enemy_strike">Enemy Strike</label><br><br>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
