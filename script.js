@@ -38,18 +38,30 @@ function disableButton(btn) {
 
 function submit() {
     const coordArr = document.getElementById("fcoord").value.split(';')
+    document.getElementById("fcoord").value = ""
 
     if (document.getElementById("mbase").checked) {
         changeBaseStatus(coordArr, "url('assets/mbase.png') no-repeat center #b3b6e6")
-    } else if (document.getElementById("sbase").checked) {
+    } //---------------------------------
+    else if (document.getElementById("sbase").checked) {
         changeBaseStatus(coordArr, "url('assets/sbase.png') no-repeat center #b3b6e6")
-    } else if (document.getElementById("pbase").checked) {
+    } //---------------------------------
+    else if (document.getElementById("pbase").checked) {
         changeBaseStatus(coordArr, "url('assets/pbase.png') no-repeat center #b3b6e6")
-    } else if (document.getElementById("logi").checked) {
+    } //---------------------------------
+    else if (document.getElementById("logi").checked) {
         changeBaseStatus(coordArr, "url('assets/logi.png') no-repeat center #b3b6e6")
-    } else if (document.getElementById("strike").checked) {
+    } //---------------------------------
+    else if (document.getElementById("strike").checked) {
         changeBaseStatus(coordArr, "url('assets/strike.png') no-repeat center #b3b6e6")
-    } else if (document.getElementById("enmstrike").checked) {
+    } //---------------------------------
+    else if (document.getElementById("raid").checked) {
+        changeBaseStatus(coordArr, "url('assets/raid.png') no-repeat center #b3b6e6")
+    } //---------------------------------
+    else if (document.getElementById("enmraid").checked) {
+        changeBaseStatus(coordArr, "url('assets/enmraid.png') no-repeat center #b3b6e6")
+    } //---------------------------------
+    else if (document.getElementById("enmstrike").checked) {
         changeBaseStatus(coordArr, "url('assets/enmstrike.png') no-repeat center #b3b6e6")
     }
 }
