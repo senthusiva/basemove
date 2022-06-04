@@ -41,28 +41,31 @@ function submit() {
     document.getElementById("fcoord").value = ""
 
     if (document.getElementById("mbase").checked) {
-        changeBaseStatus(coordArr, "url('assets/mbase.png') no-repeat center #b3b6e6")
+        changeBaseStatus(coordArr, "url('assets/mbase.png') no-repeat center #c4978d")
     } //---------------------------------
     else if (document.getElementById("sbase").checked) {
-        changeBaseStatus(coordArr, "url('assets/sbase.png') no-repeat center #b3b6e6")
+        changeBaseStatus(coordArr, "url('assets/sbase.png') no-repeat center #bcc48d")
     } //---------------------------------
     else if (document.getElementById("pbase").checked) {
-        changeBaseStatus(coordArr, "url('assets/pbase.png') no-repeat center #b3b6e6")
+        changeBaseStatus(coordArr, "url('assets/pbase.png') no-repeat center #8dafc4")
     } //---------------------------------
     else if (document.getElementById("logi").checked) {
-        changeBaseStatus(coordArr, "url('assets/logi.png') no-repeat center #b3b6e6")
+        changeBaseStatus(coordArr, "url('assets/logi.png') no-repeat center #c48dad")
     } //---------------------------------
     else if (document.getElementById("strike").checked) {
-        changeBaseStatus(coordArr, "url('assets/strike.png') no-repeat center #b3b6e6")
+        changeBaseStatus(coordArr, "url('assets/strike.png') no-repeat center #d13a1f")
     } //---------------------------------
     else if (document.getElementById("raid").checked) {
-        changeBaseStatus(coordArr, "url('assets/raid.png') no-repeat center #b3b6e6")
+        changeBaseStatus(coordArr, "url('assets/raid.png') no-repeat center #89b2d6")
     } //---------------------------------
     else if (document.getElementById("enmraid").checked) {
-        changeBaseStatus(coordArr, "url('assets/enmraid.png') no-repeat center #b3b6e6")
+        changeBaseStatus(coordArr, "url('assets/enmraid.png') no-repeat center #d6c789")
     } //---------------------------------
     else if (document.getElementById("enmstrike").checked) {
-        changeBaseStatus(coordArr, "url('assets/enmstrike.png') no-repeat center #b3b6e6")
+        changeBaseStatus(coordArr, "url('assets/enmstrike.png') no-repeat center #d1871f")
+    } //---------------------------------
+    else if (document.getElementById("clear").checked) {
+        clearField(coordArr)
     }
 }
 
@@ -70,5 +73,13 @@ function changeBaseStatus(coordArr, baseIcon) {
     for (let i = 0; i < coordArr.length; i++) {
         document.getElementById(coordArr[i]).style.background = baseIcon;
         document.getElementById(coordArr[i]).innerText = "_"
+    }
+}
+
+function clearField(coordArr) {
+    for (let i = 0; i < coordArr.length; i++) {
+        document.getElementById(coordArr[i]).style.backgroundColor = "#c9c8c8"
+        document.getElementById(coordArr[i]).style.background = ""
+        document.getElementById(coordArr[i]).innerText = coordArr[i]
     }
 }
